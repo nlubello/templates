@@ -31,6 +31,10 @@
         "type": "container"
       },
 	  {
+        "name": "WORDPRESS_DB_NAME",
+        "label": "MySQL database name"
+      },
+	  {
         "name": "WORDPRESS_DB_PASSWORD",
         "label": "Database password (mysql)"
       },
