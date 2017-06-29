@@ -45,7 +45,8 @@
     ],
     
     "volumes": [
-		"/var/www/html"
+		"/var/www/html",
+		"/usr/local/etc/php/conf.d/uploads.ini"
 	  ]
   },
   {
