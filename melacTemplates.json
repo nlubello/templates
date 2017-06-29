@@ -35,9 +35,7 @@
         "label": "Website fully qualified name"
       }
     ],
-    "ports": [
-      "80/tcp"
-    ],
+    
     "volumes": ["/var/www/html"]
   },
   {
