@@ -58,10 +58,11 @@
       {
         "name": "JOOMLA_DB_PASSWORD",
         "label": "Database password"
+      },
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Website fully qualified name"
       }
-    ],
-    "ports": [
-      "80/tcp"
     ],
     "volumes": ["/var/www/html"]
   },
@@ -72,8 +73,11 @@
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/drupal.png",
     "image": "drupal:latest",
-    "ports": [
-      "80/tcp"
+	"env": [
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Website fully qualified name"
+      }
     ],
     "volumes": ["/var/www/html"]
   },
@@ -84,10 +88,11 @@
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/magento.png",
     "image": "alankent/gsd:latest",
-    "ports": [
-      "80/tcp",
-      "3000/tcp",
-      "3001/tcp"
+    "env": [
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Website fully qualified name"
+      }
     ],
     "volumes": ["/var/www/html/"]
   },
@@ -111,10 +116,11 @@
       {
         "name": "PASSWORD",
         "label": "Database password"
+      },
+	  {
+        "name": "VIRTUAL_HOST",
+        "label": "Website fully qualified name"
       }
-    ],
-    "ports": [
-      "8069/tcp"
     ],
     "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
   },
@@ -126,8 +132,11 @@
     "note": "This application web interface is exposed on the port 55414 inside the container.",
     "logo": "https://cloudinovasi.id/assets/img/logos/urbackup.png",
     "image": "cfstras/urbackup",
-    "ports": [
-      "55413/tcp", "55414/tcp", "55415/tcp", "35622/tcp"
+	"env": [
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Website fully qualified name"
+      }
     ],
     "volumes": ["/var/urbackup"]
   }
