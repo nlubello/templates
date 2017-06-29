@@ -45,11 +45,7 @@
     ],
     
     "volumes": [
-		"/var/www/html",
-		{
-			"container": "/usr/local/etc/php/conf.d/uploads.ini",
-			"bind": "/var/docker/uploads.ini"
-		}
+		"/var/www/html"
 	  ]
   },
   {
